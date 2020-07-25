@@ -1,5 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components';
-import BGImage from './images/background.png';
+import BGImage from './images/b99.jpg';
 
 export const GlobalStyle = createGlobalStyle`
   html {
@@ -14,7 +14,7 @@ export const GlobalStyle = createGlobalStyle`
     justify-content: center;
   }
   * {
-    font-family: 'Catamaran', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
   }
 `;
@@ -29,33 +29,42 @@ export const Wrapper = styled.div`
   .score {
     color: #fff;
     font-size: 2rem;
-    margin: 0;
+    margin: 20px;
   }
   h1 {
-    font-family: Fascinate Inline;
-    background-image: linear-gradient(180deg, #fff, #87f1ff);
+    font-family: Ranchers;
+    background-image: linear-gradient(180deg, #fff, #fff000);
     font-weight: 400;
+    letter-spacing: 2px;
     background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
-    filter: drop-shadow(2px 2px #0085a3);
-    font-size: 70px;
+    font-size: 80px;
     text-align: center;
     margin: 20px;
   }
   .start,
   .next {
     cursor: pointer;
-    background: linear-gradient(180deg, #ffffff, #ffcc91);
-    border: 2px solid #d38558;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    height: 40px;
-    margin: 20px 0;
-    padding: 0 40px;
+    background-color: #fc8d00;
+    user-select: none;
+    font-size: 1.2rem;
+    width: 40%;
+    height: 55px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ffffff;
+    box-shadow: 1px 2px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: #fff;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+  }
+  .start:hover,
+  .next:hover {
+    background-color: #ffaa3f;
   }
   .start {
     max-width: 200px;
